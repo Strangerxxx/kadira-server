@@ -11,7 +11,7 @@
 FROM alpine:3.8
 
 RUN  apk upgrade --update && \
- apk add --no-cache ca-certificates nodejs nodejs-npm mongodb
+ apk add --no-cache ca-certificates nodejs npm mongodb
 
 WORKDIR /app
 

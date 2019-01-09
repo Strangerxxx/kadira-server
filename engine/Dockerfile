@@ -2,7 +2,7 @@ FROM alpine:3.8
 
 RUN \
  apk upgrade --update && \
- apk add --no-cache ca-certificates nodejs
+ apk add --no-cache ca-certificates nodejs npm
 
 WORKDIR /app
 
