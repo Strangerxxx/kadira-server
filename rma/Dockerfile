@@ -8,11 +8,9 @@
 #   apk add --no-cache ca-certificates nodejs mongodb
 #
 
-FROM alpine:edge
+FROM alpine:3.8
 
-RUN \
- echo 'http://dl-3.alpinelinux.org/alpine/edge/testing' >> /etc/apk/repositories && \
- apk upgrade --update && \
+RUN  apk upgrade --update && \
  apk add --no-cache ca-certificates nodejs nodejs-npm mongodb
 
 WORKDIR /app
